@@ -39,6 +39,7 @@ def consolidate_cart(cart)
   while i < cart.length
     #binding.pry
     new_cart_item = find_item_by_name_in_collection(cart[i][:item], newCart)
+    binding.pry
     if new_cart_item != nil
       new_cart_item[:count] += 1
     else
@@ -50,7 +51,7 @@ def consolidate_cart(cart)
         :count => 1
       }
 =end
-      binding.pry
+      
       newCart.push(new_cart_item)
       newCart[i][:count] = 1
     end
