@@ -50,6 +50,7 @@ def consolidate_cart(cart)
         :count => 1
       }
 =end
+      binding.pry
       newCart.push(new_cart_item)
       newCart[i][:count] = 1
     end
